@@ -11,6 +11,9 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.send('Hello From server')
 })
+app.get('/hello', (req, res) => {
+    res.send('This is updated Hello From server')
+})
 app.listen(port, () => {
     console.log('server is running at ', port)
 })
